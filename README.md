@@ -1,4 +1,6 @@
 # phyokhine
+# started on September 1, 2019
+
 vw (unit)
 	height, width, line-height: 68px -> 6.8vw (grows or shrinks properly with resizing window)
 
@@ -24,4 +26,7 @@ Automatic Slideshow
 ZoomIn ZoomOut effect 
  	LINK: https://w3bits.com/css-image-hover-zoom/ (website)
  		  https://www.youtube.com/watch?v=Rr1n4kZHnHM (video)
+
+Add loader page
+	LINK: https://www.w3schools.com/howto/howto_css_loader.asp
 

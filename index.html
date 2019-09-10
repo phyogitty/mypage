@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>♥‿♥ Hello ♥‿♥</title>
+	<!-- <title>♥‿♥ Hello ♥‿♥</title> -->
+  <title>P H Y O K H I N E </title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" href="images/PHYO_LOGO.png">
@@ -10,44 +11,48 @@
 </head>
 
 
-
-
 <body>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader">
+    <!-- <div class="inrow"> -->
+    <img src="images/PHYO_LOGO.png" class="middle" alt="phyo's logo">
+     <div class="inrow"> 
+        <div class="square-white"></div>
+         <div class="square-gradient"></div>
+          <div class="square-pink"></div>
+    </div>
+
+  </div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+
+  
     <nav class="contact-bar"> 
+      <!-- <div class="contact nav-div"><span class="nav-text">Navigate</span></div> -->
+      <div class="inrow1">
+      <button onclick="showNav()" class="nav-image"><img class="pushleft" src="images/PHYO_LOGO.png"></button>
+    <div class="incolumn1">
+<a href="#aboutname" class="nav-item">Name</a>
+<a href="#aboutmajor" class="nav-item">Major</a>
+<a href="#abouteducation" class="nav-item">Education</a>
+<a href="#abouthobby" class="nav-item">Hobby</a>
+<a href="#aboutalbum" class="nav-item">Album</a>
+
+
+    </div>
+    </div>
       <a href="https://www.linkedin.com/in/phyo-khine/" target=_blank><img class="contact" src="images/linkedIn-nobg.jpg"/></a>
       <a href="https://twitter.com/17171717_chen" target=_blank><img class="contact" src="images/twitter-logo1.png"/></a>
       <a href="mailto:pkhine.2020@berkeley.edu" target=_top><img class="contact gmail" src="images/gmail-logo-no-bg.png"/></a>
     </nav>
 
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light make-fixed">
-  <a class="navbar-brand, pk" href="#">Phyo Khine</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Me</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Album</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
 <div class="content">
 <section class="panel">
 
+  <div id="intro"> <div class="zoom1" id="one">
 
-<!-- BIG OPENING INTRO -->
-<!-- <p id="one">Hi, my name is </p> -->
-  <div id="intro"> <div class="zoom1" id="one">Hi, my name is </div>
+  Hi, my name is </div>
 
      <div class="zoom2" id="two"> Phyo Khine  </div>
      <div class="zoom3" id="three"> <span style="text-transform:lowercase">a</span> Student  </div>
@@ -55,26 +60,23 @@
      <div class="zoom5" id="five"> <span style="text-transform:lowercase">a</span> Coder </div></div>
         <img src="images/dark-pink.png" alt="background" class="panel-color">
 </section>
-<!-- <section class="panel">
-  <h2 class="some-text"> HELLO </h2>
-   <img src="images/dark-pink.png" alt="background" class="panel-color">
-</section> -->
+
 <section class="panel">
   <div class="normal"> <img src="images/curly-bracket1.png" class="curly1"><img src="images/curly-bracket2.png" class="curly2"></div>
   <div class="profile"><img src="images/profile1.jpeg" class="profile-image" alt="profile"  ></div>
 
 <!--   Name -->
-  <h2><span style="font-size: 0.7em">Name</span></h2>
+  <h2 id="aboutname"><span style="font-size: 0.7em">Name</span></h2>
   <h3>&emsp;Phyo Thinzar Khine (Elizabeth)</h3>
   <img src="images/dark-pink.png" alt="background" class="panel-color">
  </section>
  <section class="panel">
    <!--  Major -->
-  <h2><span style="font-size: 0.7em">Major</span></h2>
+  <h2 id="aboutmajor"><span style="font-size: 0.7em">Major</span></h2>
   <h3>&emsp;Computer Science</h3>
  
   <!-- Education -->
-  <h2><span style="font-size: 0.7em">Education </span></h2>
+  <h2 id="abouteducation"><span style="font-size: 0.7em">Education </span></h2>
   <div class="school-bar">
     <button class="school-button" onclick="displayUCB()"><img id="white-down1" src="images/white-down.png"></button>
     <h3 class="school">University of California, Berkeley</h3>
@@ -177,7 +179,7 @@
 
 
   <!-- Hobby -->
-   <h2><span style="font-size: 0.7em">Hobby</span></h2>
+   <h2 id="abouthobby"><span style="font-size: 0.7em">Hobby</span></h2>
   <h3>&emsp;Sketching, Baking, Running</h3>
  
  
@@ -189,7 +191,7 @@
 
 <section class="panel">
 
-<h2><span style="font-size: 0.7em">Album</span></h2>
+<h2 id="aboutalbum"><span style="font-size: 0.7em">Album</span></h2>
 
 <!-- put images -->
 <div class="album-slide"> 
@@ -219,7 +221,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>
 

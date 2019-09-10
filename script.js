@@ -1,3 +1,16 @@
+var myVar;
+
+
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
 var rotateFactor1 = 0;
 var rotateFactor2 = 0;
 function displayUCB() {
@@ -23,6 +36,14 @@ function displayCCSF() {
 }
 
 
+function showNav() {
+	var navBar = document.getElementsByClassName("incolumn1");
+	if (navBar[0].style.display === "none") {
+        navBar[0].style.display = "flex";
+    } else {
+        navBar[0].style.display = "none";
+    }
+}
 
 
 function upsideDown(which, factor) {
