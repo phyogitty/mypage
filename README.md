@@ -1,6 +1,8 @@
 # phyokhine
 # started on September 1, 2019
 
+https://phyogitty.github.io/mypage/
+
 vw (unit)
 	height, width, line-height: 68px -> 6.8vw (grows or shrinks properly with resizing window)
 
