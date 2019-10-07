@@ -15,7 +15,7 @@ var rotateFactor1 = 0;
 var rotateFactor2 = 0;
 function displayUCB() {
 	var berk = document.getElementById("ucb");
-	if (berk.style.display === "none") {
+	if (berk.style.display === "none" || berk.style.display === "") {
         berk.style.display = "block";
     } else {
         berk.style.display = "none";
@@ -26,7 +26,7 @@ function displayUCB() {
 
 function displayCCSF() {
 	var ccsf = document.getElementById("ccsf");
-	if (ccsf.style.display === "none") {
+	if (ccsf.style.display === "none" || ccsf.style.display === "") {
         ccsf.style.display = "block";
     } else {
         ccsf.style.display = "none";
@@ -35,6 +35,32 @@ function displayCCSF() {
     upsideDown("white-down2", rotateFactor2);
 }
 
+function viewResume() {
+  var resume = document.getElementById("resume");
+  var view = document.getElementById("view");
+  var hide = document.getElementById("hide");
+  if (resume.style.display === "" || resume.style.display === "none") {
+     resume.style.display = "block";
+     view.style.color = "white";
+     view.style.backgroundColor = "#B905D9";
+     hide.style.color = "#B905D9";
+     hide.style.backgroundColor = "white";
+
+  } 
+}
+function hideResume() {
+  var resume = document.getElementById("resume");
+  var view = document.getElementById("view");
+  var hide = document.getElementById("hide");
+    if (resume.style.display === "block") {
+     resume.style.display = "none";
+     hide.style.color = "white";
+     hide.style.backgroundColor = "#B905D9";
+     view.style.color = "#B905D9";
+     view.style.backgroundColor = "white";
+
+  } 
+}
 
 function showNav() {
 	var navBar = document.getElementsByClassName("incolumn1");
@@ -51,9 +77,9 @@ function upsideDown(which, factor) {
 	// var degree = (factor * 180) % 360;
 	var image =document.getElementById(which);
     if (factor % 2 === 1) {
-    	image.src = "images/white-down copy.png";
-    } else {
     	image.src = "images/white-down.png";
+    } else {
+    	image.src = "images/white-down copy.png";
     }
 	// imgage.setAttribute("style",'transform:rotate(${degree}deg)');
 

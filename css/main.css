@@ -411,12 +411,24 @@ h3.school {
 	text-align: left;
 }
 
-#ucb, #ccsf{
+#ucb {
+		position: relative;
+	z-index: 1;
+	background-color: rgba(185, 5, 217, 0.4);
+	/*width: 90%;*/
+	display: none;
+	justify-content: center;
+	flex-direction: column;
+	/*margin: 0 5% 0 5%;*/
+
+}
+
+#ccsf{
 	position: relative;
 	z-index: 1;
 	background-color: rgba(185, 5, 217, 0.4);
 	/*width: 90%;*/
-	display: flex;
+	display: none;
 	justify-content: center;
 	flex-direction: column;
 	/*margin: 0 5% 0 5%;*/
@@ -424,6 +436,53 @@ h3.school {
 
 }
 
+
+
+#view {
+	
+	margin-top: 1.8vw;
+	margin-left:39%;
+	height: 3vw;
+	width: 7vw;
+    position: relative;
+	z-index: 1;
+	color: #B905D9;
+	font-size: 1.5vw;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-style: none;
+}
+ #hide {
+ margin-top: 1.8vw;
+ 	height: 3vw;
+	width: 7vw;
+ 	position: relative;
+	z-index: 1;
+	color: rgba(255, 255, 255);
+	font-size: 1.5vw;
+	border-radius: 10%;
+	background-color: #B905D9;
+	border-style: none;
+ 	 
+ 	 }
+#resume {
+	
+	position: relative;
+
+	z-index: 1;
+    display:  none;
+    margin-left: 10%;
+	width: 80%;
+	height: auto;
+	margin-top: 3vw;
+	margin-bottom: 1.5vw;
+	background-color: blue;
+}
+ #resImage {
+ 	position: relative;
+ 	z-index: 1;
+ 	width: 100%;
+ }
 .logos {
 	border-top: 2vw solid transparent;
 	display: flex;
